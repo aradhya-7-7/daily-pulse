@@ -1,0 +1,48 @@
+.speak-button {
+   display: block;
+   margin: 30px auto 0;
+   padding: 15px 30px;
+   font-size: 1.2rem;
+   background-color: #000;
+   color: #fff;
+   border: 2px solid #000;
+   border-radius: 50px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+ }
+ 
+ .speak-button:hover {
+   background-color: #fff;
+   color: #000;
+   transform: scale(1.05);
+ }
+ 
+ .speak-button:active {
+   transform: scale(0.98);
+ }
+
+ .headlines-container {
+  margin: 20px 0;
+}
+
+.headline-item {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.headline-text {
+  margin-bottom: 5px;
+}
+
+.reading-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}

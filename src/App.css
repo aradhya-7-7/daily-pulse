@@ -1,0 +1,168 @@
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Header Styles */
+.app-header {
+  background: #000;
+  padding: 20px 0;
+  color: white;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 20px;
+}
+
+/* Font Controls */
+.font-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.font-controls button {
+  padding: 8px 12px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.font-controls button:hover {
+  background: #fff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* Main Content */
+.main-heading {
+  font-family: 'Algerian', serif;
+  font-size: 4rem;
+  text-align: center;
+  color: #fff;
+  margin: 2rem 0;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.main-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Stock Ticker Styles */
+.stock-ticker-wrapper {
+  width: 100%;
+  background: #000;
+  padding: 15px 0;
+  margin-bottom: 1px;
+  display: block;
+}
+
+.stock-banner {
+  width: 100%;
+  background: #000;
+  padding: 10px 0;
+  z-index: 1000;
+  border-bottom: 2px solid #333;
+}
+
+.stocks-dashboard {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.stocks-ticker {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.stock-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 8px 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: white;
+}
+
+.stock-symbol {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.stock-price {
+  font-family: monospace;
+  font-size: 1.1em;
+}
+
+.stock-change {
+  font-size: 0.9em;
+}
+
+.positive { color: #22c55e; }
+.negative { color: #ef4444; }
+
+/* Font Size Classes */
+.font-small { font-size: 0.9rem; }
+.font-medium { font-size: 1rem; }
+.font-large { font-size: 1.2rem; }
+
+/* Animations */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .top-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .main-heading {
+    font-size: 3rem;
+  }
+
+  .content-container {
+    grid-template-columns: 1fr;
+  }
+}

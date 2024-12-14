@@ -1,0 +1,159 @@
+.footer {
+  background-color: #ffffff;
+  border-top: 2px solid #000000;
+  padding: 2rem 0 1rem 0;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.footer-section {
+  flex: 1;
+  max-width: 300px;
+}
+
+.footer-section h3 {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  margin-bottom: 1rem;
+}
+
+.footer-section h4 {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  margin-bottom: 1rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.footer-section a:hover {
+  color: #666666;
+  transform: translateX(5px);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  padding: 0.5rem 1rem;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  min-width: 100px;
+  text-align: center;
+}
+
+.social-links a:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eaeaea;
+}
+
+p {
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+  margin: 20px 0;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-family: 'Montserrat', sans-serif; /* Modern, clean font */
+}
+
+p a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 2px 5px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Sleek, professional font */
+}
+
+p a:hover {
+  background-color: #000;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+
+
+/* Tablet Screens */
+@media (max-width: 1024px) {
+  .footer-content {
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+  }
+  
+  .footer-section {
+    max-width: 250px;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 0 0.8rem 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .footer-section {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+  .footer {
+    padding: 1rem 0 0.5rem 0;
+  }
+
+  .footer-content {
+    gap: 1.5rem;
+  }
+
+  .social-links a {
+    min-width: 80px;
+    padding: 0.4rem 0.8rem;
+  }
+}
