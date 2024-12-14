@@ -84,12 +84,6 @@ Get your API keys from:
 
 ---
 
-## Future Enhancements 🎯
-- Dark/Light theme toggle
-- User authentication
-- Bookmarking system
-- Comment sections
-- Personalized news feed
 
 ---
 
