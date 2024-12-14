@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from '/node_modules/framer-motion'
 import { useState } from 'react';
 import Navbar from './components/Navbar';
 import NewsFeed from './components/NewsFeed';
